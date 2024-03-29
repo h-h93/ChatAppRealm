@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		67CD16CE2BB3333C0079E732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16CD2BB3333C0079E732 /* AppDelegate.swift */; };
 		67CD16D02BB3333C0079E732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16CF2BB3333C0079E732 /* SceneDelegate.swift */; };
-		67CD16D22BB3333C0079E732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16D12BB3333C0079E732 /* ViewController.swift */; };
-		67CD16D52BB3333C0079E732 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 67CD16D42BB3333C0079E732 /* Base */; };
+		67CD16D22BB3333C0079E732 /* MuzzChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16D12BB3333C0079E732 /* MuzzChatVC.swift */; };
 		67CD16D72BB3333D0079E732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CD16D62BB3333D0079E732 /* Assets.xcassets */; };
 		67CD16DA2BB3333D0079E732 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 67CD16D92BB3333D0079E732 /* Base */; };
 		67CD16E52BB3333D0079E732 /* MuzzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16E42BB3333D0079E732 /* MuzzAppTests.swift */; };
 		67CD16EF2BB3333D0079E732 /* MuzzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16EE2BB3333D0079E732 /* MuzzAppUITests.swift */; };
 		67CD16F12BB3333D0079E732 /* MuzzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16F02BB3333D0079E732 /* MuzzAppUITestsLaunchTests.swift */; };
+		67CD17062BB344A60079E732 /* MZTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17052BB344A60079E732 /* MZTitleLabel.swift */; };
+		67CD170A2BB3474D0079E732 /* MZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17092BB3474D0079E732 /* MZTextField.swift */; };
+		67CD170E2BB36EB90079E732 /* MZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD170D2BB36EB90079E732 /* MZButton.swift */; };
+		67CD17122BB4A4120079E732 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 67CD17112BB4A4120079E732 /* Realm */; };
+		67CD17142BB4A4120079E732 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67CD17132BB4A4120079E732 /* RealmSwift */; };
+		67CD17162BB4A4B30079E732 /* RealmDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17152BB4A4B30079E732 /* RealmDBManager.swift */; };
+		67CD17182BB4A64C0079E732 /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17172BB4A64C0079E732 /* ChatListVC.swift */; };
+		67CD171A2BB6FC820079E732 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17192BB6FC820079E732 /* ChatMessage.swift */; };
+		67CD171C2BB700EC0079E732 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD171B2BB700EC0079E732 /* ChatVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,7 @@
 		67CD16CA2BB3333C0079E732 /* MuzzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD16CD2BB3333C0079E732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67CD16CF2BB3333C0079E732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67CD16D12BB3333C0079E732 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67CD16D42BB3333C0079E732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67CD16D12BB3333C0079E732 /* MuzzChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzzChatVC.swift; sourceTree = "<group>"; };
 		67CD16D62BB3333D0079E732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67CD16D92BB3333D0079E732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67CD16DB2BB3333D0079E732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,14 @@
 		67CD16EA2BB3333D0079E732 /* MuzzAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzzAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD16EE2BB3333D0079E732 /* MuzzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzzAppUITests.swift; sourceTree = "<group>"; };
 		67CD16F02BB3333D0079E732 /* MuzzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67CD17052BB344A60079E732 /* MZTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZTitleLabel.swift; sourceTree = "<group>"; };
+		67CD17092BB3474D0079E732 /* MZTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZTextField.swift; sourceTree = "<group>"; };
+		67CD170D2BB36EB90079E732 /* MZButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZButton.swift; sourceTree = "<group>"; };
+		67CD170F2BB377090079E732 /* MuzzApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MuzzApp.entitlements; sourceTree = "<group>"; };
+		67CD17152BB4A4B30079E732 /* RealmDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBManager.swift; sourceTree = "<group>"; };
+		67CD17172BB4A64C0079E732 /* ChatListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListVC.swift; sourceTree = "<group>"; };
+		67CD17192BB6FC820079E732 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		67CD171B2BB700EC0079E732 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CD17142BB4A4120079E732 /* RealmSwift in Frameworks */,
+				67CD17122BB4A4120079E732 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +116,14 @@
 		67CD16CC2BB3333C0079E732 /* MuzzApp */ = {
 			isa = PBXGroup;
 			children = (
-				67CD16CD2BB3333C0079E732 /* AppDelegate.swift */,
-				67CD16CF2BB3333C0079E732 /* SceneDelegate.swift */,
-				67CD16D12BB3333C0079E732 /* ViewController.swift */,
-				67CD16D32BB3333C0079E732 /* Main.storyboard */,
+				67CD170F2BB377090079E732 /* MuzzApp.entitlements */,
+				67CD17022BB3423D0079E732 /* Managers */,
+				67CD16FD2BB334E60079E732 /* Model */,
+				67CD17032BB342500079E732 /* Screens */,
+				67CD17072BB347120079E732 /* Labels */,
+				67CD17082BB347290079E732 /* TextFields */,
+				67CD170C2BB36EA10079E732 /* Buttons */,
+				67CD17042BB342670079E732 /* Support */,
 				67CD16D62BB3333D0079E732 /* Assets.xcassets */,
 				67CD16D82BB3333D0079E732 /* LaunchScreen.storyboard */,
 				67CD16DB2BB3333D0079E732 /* Info.plist */,
@@ -127,6 +148,65 @@
 			path = MuzzAppUITests;
 			sourceTree = "<group>";
 		};
+		67CD16FD2BB334E60079E732 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67CD17192BB6FC820079E732 /* ChatMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67CD17022BB3423D0079E732 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				67CD17152BB4A4B30079E732 /* RealmDBManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		67CD17032BB342500079E732 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				67CD16D12BB3333C0079E732 /* MuzzChatVC.swift */,
+				67CD17172BB4A64C0079E732 /* ChatListVC.swift */,
+				67CD171B2BB700EC0079E732 /* ChatVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		67CD17042BB342670079E732 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				67CD16CD2BB3333C0079E732 /* AppDelegate.swift */,
+				67CD16CF2BB3333C0079E732 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		67CD17072BB347120079E732 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				67CD17052BB344A60079E732 /* MZTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		67CD17082BB347290079E732 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				67CD17092BB3474D0079E732 /* MZTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		67CD170C2BB36EA10079E732 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				67CD170D2BB36EB90079E732 /* MZButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +223,10 @@
 			dependencies = (
 			);
 			name = MuzzApp;
+			packageProductDependencies = (
+				67CD17112BB4A4120079E732 /* Realm */,
+				67CD17132BB4A4120079E732 /* RealmSwift */,
+			);
 			productName = MuzzApp;
 			productReference = 67CD16CA2BB3333C0079E732 /* MuzzApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +299,9 @@
 				Base,
 			);
 			mainGroup = 67CD16C12BB3333C0079E732;
+			packageReferences = (
+				67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 67CD16CB2BB3333C0079E732 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +320,6 @@
 			files = (
 				67CD16D72BB3333D0079E732 /* Assets.xcassets in Resources */,
 				67CD16DA2BB3333D0079E732 /* Base in Resources */,
-				67CD16D52BB3333C0079E732 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +344,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67CD16D22BB3333C0079E732 /* ViewController.swift in Sources */,
+				67CD171C2BB700EC0079E732 /* ChatVC.swift in Sources */,
+				67CD16D22BB3333C0079E732 /* MuzzChatVC.swift in Sources */,
+				67CD17182BB4A64C0079E732 /* ChatListVC.swift in Sources */,
+				67CD17062BB344A60079E732 /* MZTitleLabel.swift in Sources */,
+				67CD17162BB4A4B30079E732 /* RealmDBManager.swift in Sources */,
+				67CD171A2BB6FC820079E732 /* ChatMessage.swift in Sources */,
+				67CD170A2BB3474D0079E732 /* MZTextField.swift in Sources */,
+				67CD170E2BB36EB90079E732 /* MZButton.swift in Sources */,
 				67CD16CE2BB3333C0079E732 /* AppDelegate.swift in Sources */,
 				67CD16D02BB3333C0079E732 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +390,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		67CD16D32BB3333C0079E732 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67CD16D42BB3333C0079E732 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67CD16D82BB3333D0079E732 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MuzzApp/MuzzApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68Z27E7S2D;
@@ -447,9 +533,9 @@
 				INFOPLIST_FILE = MuzzApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MuzzApp/MuzzApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68Z27E7S2D;
@@ -475,9 +562,9 @@
 				INFOPLIST_FILE = MuzzApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +694,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67CD17112BB4A4120079E732 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		67CD17132BB4A4120079E732 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67CD16C22BB3333C0079E732 /* Project object */;
 }
