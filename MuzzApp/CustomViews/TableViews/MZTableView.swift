@@ -7,7 +7,8 @@
 
 import UIKit
 
-class MessageBubbleTableView: UITableView {
+class MZTableView: UITableView {
+    static let reuseID = "Cell"
     
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -22,8 +23,7 @@ class MessageBubbleTableView: UITableView {
     
     convenience init(seperatorStyle: UITableViewCell.SeparatorStyle) {
         self.init(frame: .zero, style: .plain)
-        self.separatorStyle = seperatorStyle
-        
+        self.separatorStyle = seperatorStyle 
     }
     
     

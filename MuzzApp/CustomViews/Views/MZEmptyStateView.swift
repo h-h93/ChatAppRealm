@@ -1,13 +1,13 @@
 //
-//  MZMessageLabel.swift
+//  MZEmptyStateView.swift
 //  MuzzApp
 //
-//  Created by hanif hussain on 31/03/2024.
+//  Created by hanif hussain on 06/04/2024.
 //
 
 import UIKit
 
-class MZMessageLabel: UILabel {
+class MZEmptyStateView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

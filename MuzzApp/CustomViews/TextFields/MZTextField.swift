@@ -25,7 +25,7 @@ class MZTextField: UITextField {
     }
     
     
-    func configure() {
+   private func configure() {
         layer.cornerRadius = 10
         layer.borderWidth = 2
         layer.borderColor = UIColor.systemGray4.cgColor
@@ -46,5 +46,4 @@ class MZTextField: UITextField {
         
         translatesAutoresizingMaskIntoConstraints = false
     }
-
 }
