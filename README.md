@@ -36,7 +36,11 @@ Input Accessory View - https://github.com/nathantannar4/InputBarAccessoryView
 Realm - https://github.com/realm/realm-swift
 
 Configure:
-Clone and run no need to configure
+Clone and run no need to configure. 
+To sign in to the app use the following test accounts:
+test@test.com
+muzz@test.com
+test2@test.com
 
 Run the app using:
 Device or simulator(requires Xcode)
