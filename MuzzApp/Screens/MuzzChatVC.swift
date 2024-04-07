@@ -27,6 +27,8 @@ class MuzzChatVC: MZDataLoadingVC {
         loginButton.addTarget(self, action: #selector(loginUser), for: .touchUpInside)
         loginTextField.textContentType = .emailAddress
         loginTextField.autocapitalizationType = .none
+        loginTextField.returnKeyType = .go
+        loginTextField.delegate = self
     }
     
     
@@ -72,6 +74,13 @@ class MuzzChatVC: MZDataLoadingVC {
                 }
             }
         }
+    }
+}
+
+extension MuzzChatVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        loginUser()
+        return true
     }
 }
 

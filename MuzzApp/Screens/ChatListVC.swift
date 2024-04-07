@@ -50,6 +50,7 @@ class ChatListVC: UIViewController {
     
     func configureTableView() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: MZTableView.reuseID)
+        tableView.separatorStyle = .singleLine
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
