@@ -7,6 +7,7 @@
 
 import UIKit
 
+// Basic loading vc to show some process is running
 class MZDataLoadingVC: UIViewController {
     var containerView: UIView!
     
@@ -41,7 +42,7 @@ class MZDataLoadingVC: UIViewController {
     
     
     func showEmptyStateView(message: String, in view: UIView) {
-        let emptyStateView = GFEmptyStateView(message: message)
+        let emptyStateView = MZEmptyStateView(message: message)
         emptyStateView.frame = view.bounds
         view.addSubview(emptyStateView)
     }

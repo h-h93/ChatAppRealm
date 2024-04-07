@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import Realm
 
 class ChatListVC: UIViewController {
-    let tableView = UITableView()
+    let tableView = MZTableView()
     var user: String!
     var userCount = 0
-    var friendsList = [String]()
+    var friendsList = [String: RLMUser]()
     
     init(user: String) {
         super.init(nibName: nil, bundle: nil)
@@ -28,22 +29,27 @@ class ChatListVC: UIViewController {
         super.viewDidLoad()
         configure()
         configureTableView()
-        RealmDBManager.shared.getMessages()
+        getUsers()
     }
     
     
     func configure() {
         view.backgroundColor = .systemBackground
+    }
+    
+    
+    func getUsers() {
         Task() {
-            userCount = RealmDBManager.shared.realmApp.allUsers.count
+            userCount = RealmDBManager.shared.realmApp.allUsers.count - 1
+            friendsList = RealmDBManager.shared.realmApp.allUsers
+            friendsList.removeValue(forKey: RealmDBManager.shared.realmApp.currentUser!.id)
             tableView.reloadData()
         }
     }
     
     
     func configureTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: MZTableView.reuseID)
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
@@ -55,7 +61,6 @@ class ChatListVC: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
-
 }
 
 
@@ -66,17 +71,17 @@ extension ChatListVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = Array(RealmDBManager.shared.realmApp.allUsers)[indexPath.row].value.profile.email
+        let cell = tableView.dequeueReusableCell(withIdentifier: MZTableView.reuseID, for: indexPath)
+        cell.textLabel?.text = Array(friendsList)[indexPath.row].value.profile.email
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let recipient = Array(RealmDBManager.shared.realmApp.allUsers)[indexPath.row].value.id 
+        guard let recipient = Array(friendsList)[indexPath.row].value.profile.email else
+        { return }
         let chatVC = ChatVC(recipient: recipient)
         navigationController?.pushViewController(chatVC, animated: true)
-        
     }
     
 }

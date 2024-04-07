@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		670309A12BB77A0700AF49F2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 670309A02BB77A0700AF49F2 /* Realm */; };
+		670309A32BB77A0700AF49F2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 670309A22BB77A0700AF49F2 /* RealmSwift */; };
+		6755185C2BB99DC10089D0CE /* MZTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755185B2BB99DC10089D0CE /* MZTableView.swift */; };
+		675518642BB9B0C80089D0CE /* MZMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518632BB9B0C80089D0CE /* MZMessageCell.swift */; };
+		675518662BB9B6970089D0CE /* MZMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518652BB9B6970089D0CE /* MZMessageLabel.swift */; };
+		675518692BB9E3090089D0CE /* MZAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518682BB9E3090089D0CE /* MZAlertContainerView.swift */; };
+		6755186D2BBAE5D60089D0CE /* MZInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755186C2BBAE5D60089D0CE /* MZInputAccessoryView.swift */; };
+		675518722BBB0CF20089D0CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518712BBB0CF20089D0CE /* Constants.swift */; };
+		6755187D2BBD786A0089D0CE /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = 6755187C2BBD786A0089D0CE /* InputBarAccessoryView */; };
+		675518812BBDE2AE0089D0CE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518802BBDE2AE0089D0CE /* UIViewController+Ext.swift */; };
+		675518842BBECFE70089D0CE /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518832BBECFE70089D0CE /* CollectionHeaderView.swift */; };
+		6755188A2BBEF5480089D0CE /* CollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518892BBEF5480089D0CE /* CollectionView+Ext.swift */; };
+		6755188C2BC042700089D0CE /* MZCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755188B2BC042700089D0CE /* MZCollectionView.swift */; };
+		6755188E2BC059130089D0CE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755188D2BC059130089D0CE /* String+Ext.swift */; };
+		675518902BC059BA0089D0CE /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755188F2BC059BA0089D0CE /* Date+Ext.swift */; };
+		675518942BC05BDF0089D0CE /* ChatVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518932BC05BDF0089D0CE /* ChatVC+Ext.swift */; };
+		675518962BC1E0940089D0CE /* MZMessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518952BC1E0940089D0CE /* MZMessageBubbleView.swift */; };
+		675518982BC1E4A60089D0CE /* MZMessageAnimationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518972BC1E4A60089D0CE /* MZMessageAnimationLabel.swift */; };
+		6755189C2BC1FDA90089D0CE /* MZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755189B2BC1FDA90089D0CE /* MZTextField.swift */; };
+		6755189F2BC2062C0089D0CE /* MZDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755189E2BC2062C0089D0CE /* MZDataLoadingVC.swift */; };
+		675518A22BC2083C0089D0CE /* MZEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518A12BC2083C0089D0CE /* MZEmptyStateView.swift */; };
+		675518AA2BC2F1130089D0CE /* MZError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518A92BC2F1130089D0CE /* MZError.swift */; };
+		675518AC2BC2F3630089D0CE /* MZAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518AB2BC2F3630089D0CE /* MZAlertVC.swift */; };
+		675518AE2BC2F4D30089D0CE /* MZBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518AD2BC2F4D30089D0CE /* MZBodyLabel.swift */; };
+		675518B02BC2F5C80089D0CE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675518AF2BC2F5C80089D0CE /* UIView+Ext.swift */; };
 		67CD16CE2BB3333C0079E732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16CD2BB3333C0079E732 /* AppDelegate.swift */; };
 		67CD16D02BB3333C0079E732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16CF2BB3333C0079E732 /* SceneDelegate.swift */; };
 		67CD16D22BB3333C0079E732 /* MuzzChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16D12BB3333C0079E732 /* MuzzChatVC.swift */; };
@@ -16,10 +41,7 @@
 		67CD16EF2BB3333D0079E732 /* MuzzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16EE2BB3333D0079E732 /* MuzzAppUITests.swift */; };
 		67CD16F12BB3333D0079E732 /* MuzzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16F02BB3333D0079E732 /* MuzzAppUITestsLaunchTests.swift */; };
 		67CD17062BB344A60079E732 /* MZTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17052BB344A60079E732 /* MZTitleLabel.swift */; };
-		67CD170A2BB3474D0079E732 /* MZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17092BB3474D0079E732 /* MZTextField.swift */; };
 		67CD170E2BB36EB90079E732 /* MZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD170D2BB36EB90079E732 /* MZButton.swift */; };
-		67CD17122BB4A4120079E732 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 67CD17112BB4A4120079E732 /* Realm */; };
-		67CD17142BB4A4120079E732 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67CD17132BB4A4120079E732 /* RealmSwift */; };
 		67CD17162BB4A4B30079E732 /* RealmDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17152BB4A4B30079E732 /* RealmDBManager.swift */; };
 		67CD17182BB4A64C0079E732 /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17172BB4A64C0079E732 /* ChatListVC.swift */; };
 		67CD171A2BB6FC820079E732 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD17192BB6FC820079E732 /* ChatMessage.swift */; };
@@ -44,6 +66,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6755185B2BB99DC10089D0CE /* MZTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZTableView.swift; sourceTree = "<group>"; };
+		675518632BB9B0C80089D0CE /* MZMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMessageCell.swift; sourceTree = "<group>"; };
+		675518652BB9B6970089D0CE /* MZMessageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMessageLabel.swift; sourceTree = "<group>"; };
+		675518682BB9E3090089D0CE /* MZAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZAlertContainerView.swift; sourceTree = "<group>"; };
+		6755186C2BBAE5D60089D0CE /* MZInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZInputAccessoryView.swift; sourceTree = "<group>"; };
+		675518712BBB0CF20089D0CE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		675518802BBDE2AE0089D0CE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		675518832BBECFE70089D0CE /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		675518892BBEF5480089D0CE /* CollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Ext.swift"; sourceTree = "<group>"; };
+		6755188B2BC042700089D0CE /* MZCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZCollectionView.swift; sourceTree = "<group>"; };
+		6755188D2BC059130089D0CE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		6755188F2BC059BA0089D0CE /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		675518932BC05BDF0089D0CE /* ChatVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC+Ext.swift"; sourceTree = "<group>"; };
+		675518952BC1E0940089D0CE /* MZMessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMessageBubbleView.swift; sourceTree = "<group>"; };
+		675518972BC1E4A60089D0CE /* MZMessageAnimationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMessageAnimationLabel.swift; sourceTree = "<group>"; };
+		6755189B2BC1FDA90089D0CE /* MZTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZTextField.swift; sourceTree = "<group>"; };
+		6755189E2BC2062C0089D0CE /* MZDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZDataLoadingVC.swift; sourceTree = "<group>"; };
+		675518A12BC2083C0089D0CE /* MZEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZEmptyStateView.swift; sourceTree = "<group>"; };
+		675518A92BC2F1130089D0CE /* MZError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZError.swift; sourceTree = "<group>"; };
+		675518AB2BC2F3630089D0CE /* MZAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZAlertVC.swift; sourceTree = "<group>"; };
+		675518AD2BC2F4D30089D0CE /* MZBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZBodyLabel.swift; sourceTree = "<group>"; };
+		675518AF2BC2F5C80089D0CE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		67CD16CA2BB3333C0079E732 /* MuzzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CD16CD2BB3333C0079E732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67CD16CF2BB3333C0079E732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +101,6 @@
 		67CD16EE2BB3333D0079E732 /* MuzzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzzAppUITests.swift; sourceTree = "<group>"; };
 		67CD16F02BB3333D0079E732 /* MuzzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67CD17052BB344A60079E732 /* MZTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZTitleLabel.swift; sourceTree = "<group>"; };
-		67CD17092BB3474D0079E732 /* MZTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZTextField.swift; sourceTree = "<group>"; };
 		67CD170D2BB36EB90079E732 /* MZButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZButton.swift; sourceTree = "<group>"; };
 		67CD170F2BB377090079E732 /* MuzzApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MuzzApp.entitlements; sourceTree = "<group>"; };
 		67CD17152BB4A4B30079E732 /* RealmDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBManager.swift; sourceTree = "<group>"; };
@@ -71,8 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67CD17142BB4A4120079E732 /* RealmSwift in Frameworks */,
-				67CD17122BB4A4120079E732 /* Realm in Frameworks */,
+				670309A32BB77A0700AF49F2 /* RealmSwift in Frameworks */,
+				670309A12BB77A0700AF49F2 /* Realm in Frameworks */,
+				6755187D2BBD786A0089D0CE /* InputBarAccessoryView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +137,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6755185A2BB99D820089D0CE /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				6755185B2BB99DC10089D0CE /* MZTableView.swift */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		675518622BB9AB930089D0CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				675518632BB9B0C80089D0CE /* MZMessageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		675518672BB9E2EB0089D0CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				675518682BB9E3090089D0CE /* MZAlertContainerView.swift */,
+				6755186C2BBAE5D60089D0CE /* MZInputAccessoryView.swift */,
+				675518952BC1E0940089D0CE /* MZMessageBubbleView.swift */,
+				675518A12BC2083C0089D0CE /* MZEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		675518702BBB0CE20089D0CE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				675518A92BC2F1130089D0CE /* MZError.swift */,
+				675518712BBB0CF20089D0CE /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		675518822BBECFC40089D0CE /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				675518832BBECFE70089D0CE /* CollectionHeaderView.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		675518912BC05BA70089D0CE /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				6755188B2BC042700089D0CE /* MZCollectionView.swift */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		675518922BC05BCE0089D0CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				675518932BC05BDF0089D0CE /* ChatVC+Ext.swift */,
+				675518802BBDE2AE0089D0CE /* UIViewController+Ext.swift */,
+				675518892BBEF5480089D0CE /* CollectionView+Ext.swift */,
+				6755188D2BC059130089D0CE /* String+Ext.swift */,
+				6755188F2BC059BA0089D0CE /* Date+Ext.swift */,
+				675518AF2BC2F5C80089D0CE /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6755189D2BC205FE0089D0CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6755189E2BC2062C0089D0CE /* MZDataLoadingVC.swift */,
+				675518AB2BC2F3630089D0CE /* MZAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		675518A02BC207B10089D0CE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				67CD17022BB3423D0079E732 /* Managers */,
+				67CD16FD2BB334E60079E732 /* Model */,
+				675518822BBECFC40089D0CE /* Headers */,
+				675518672BB9E2EB0089D0CE /* Views */,
+				6755185A2BB99D820089D0CE /* TableViews */,
+				675518912BC05BA70089D0CE /* CollectionViews */,
+				675518622BB9AB930089D0CE /* Cells */,
+				67CD17082BB347290079E732 /* TextFields */,
+				67CD170C2BB36EA10079E732 /* Buttons */,
+				67CD17072BB347120079E732 /* Labels */,
+				6755189D2BC205FE0089D0CE /* ViewControllers */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		67CD16C12BB3333C0079E732 = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +252,11 @@
 		67CD16CC2BB3333C0079E732 /* MuzzApp */ = {
 			isa = PBXGroup;
 			children = (
+				675518A02BC207B10089D0CE /* CustomViews */,
+				675518922BC05BCE0089D0CE /* Extensions */,
+				675518702BBB0CE20089D0CE /* Utilities */,
 				67CD170F2BB377090079E732 /* MuzzApp.entitlements */,
-				67CD17022BB3423D0079E732 /* Managers */,
-				67CD16FD2BB334E60079E732 /* Model */,
 				67CD17032BB342500079E732 /* Screens */,
-				67CD17072BB347120079E732 /* Labels */,
-				67CD17082BB347290079E732 /* TextFields */,
-				67CD170C2BB36EA10079E732 /* Buttons */,
 				67CD17042BB342670079E732 /* Support */,
 				67CD16D62BB3333D0079E732 /* Assets.xcassets */,
 				67CD16D82BB3333D0079E732 /* LaunchScreen.storyboard */,
@@ -187,6 +321,9 @@
 			isa = PBXGroup;
 			children = (
 				67CD17052BB344A60079E732 /* MZTitleLabel.swift */,
+				675518652BB9B6970089D0CE /* MZMessageLabel.swift */,
+				675518972BC1E4A60089D0CE /* MZMessageAnimationLabel.swift */,
+				675518AD2BC2F4D30089D0CE /* MZBodyLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -194,7 +331,7 @@
 		67CD17082BB347290079E732 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
-				67CD17092BB3474D0079E732 /* MZTextField.swift */,
+				6755189B2BC1FDA90089D0CE /* MZTextField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -224,8 +361,9 @@
 			);
 			name = MuzzApp;
 			packageProductDependencies = (
-				67CD17112BB4A4120079E732 /* Realm */,
-				67CD17132BB4A4120079E732 /* RealmSwift */,
+				670309A02BB77A0700AF49F2 /* Realm */,
+				670309A22BB77A0700AF49F2 /* RealmSwift */,
+				6755187C2BBD786A0089D0CE /* InputBarAccessoryView */,
 			);
 			productName = MuzzApp;
 			productReference = 67CD16CA2BB3333C0079E732 /* MuzzApp.app */;
@@ -300,7 +438,8 @@
 			);
 			mainGroup = 67CD16C12BB3333C0079E732;
 			packageReferences = (
-				67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				6703099F2BB77A0700AF49F2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				6755187B2BBD786A0089D0CE /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
 			);
 			productRefGroup = 67CD16CB2BB3333C0079E732 /* Products */;
 			projectDirPath = "";
@@ -344,15 +483,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675518AC2BC2F3630089D0CE /* MZAlertVC.swift in Sources */,
 				67CD171C2BB700EC0079E732 /* ChatVC.swift in Sources */,
+				675518AA2BC2F1130089D0CE /* MZError.swift in Sources */,
+				675518722BBB0CF20089D0CE /* Constants.swift in Sources */,
 				67CD16D22BB3333C0079E732 /* MuzzChatVC.swift in Sources */,
+				675518AE2BC2F4D30089D0CE /* MZBodyLabel.swift in Sources */,
+				6755186D2BBAE5D60089D0CE /* MZInputAccessoryView.swift in Sources */,
 				67CD17182BB4A64C0079E732 /* ChatListVC.swift in Sources */,
+				6755188E2BC059130089D0CE /* String+Ext.swift in Sources */,
+				6755189C2BC1FDA90089D0CE /* MZTextField.swift in Sources */,
+				6755188C2BC042700089D0CE /* MZCollectionView.swift in Sources */,
+				675518692BB9E3090089D0CE /* MZAlertContainerView.swift in Sources */,
+				675518902BC059BA0089D0CE /* Date+Ext.swift in Sources */,
+				675518B02BC2F5C80089D0CE /* UIView+Ext.swift in Sources */,
 				67CD17062BB344A60079E732 /* MZTitleLabel.swift in Sources */,
+				6755189F2BC2062C0089D0CE /* MZDataLoadingVC.swift in Sources */,
 				67CD17162BB4A4B30079E732 /* RealmDBManager.swift in Sources */,
+				675518982BC1E4A60089D0CE /* MZMessageAnimationLabel.swift in Sources */,
+				675518642BB9B0C80089D0CE /* MZMessageCell.swift in Sources */,
+				6755185C2BB99DC10089D0CE /* MZTableView.swift in Sources */,
+				675518662BB9B6970089D0CE /* MZMessageLabel.swift in Sources */,
 				67CD171A2BB6FC820079E732 /* ChatMessage.swift in Sources */,
-				67CD170A2BB3474D0079E732 /* MZTextField.swift in Sources */,
+				675518A22BC2083C0089D0CE /* MZEmptyStateView.swift in Sources */,
+				675518942BC05BDF0089D0CE /* ChatVC+Ext.swift in Sources */,
 				67CD170E2BB36EB90079E732 /* MZButton.swift in Sources */,
+				6755188A2BBEF5480089D0CE /* CollectionView+Ext.swift in Sources */,
 				67CD16CE2BB3333C0079E732 /* AppDelegate.swift in Sources */,
+				675518842BBECFE70089D0CE /* CollectionHeaderView.swift in Sources */,
+				675518962BC1E0940089D0CE /* MZMessageBubbleView.swift in Sources */,
+				675518812BBDE2AE0089D0CE /* UIViewController+Ext.swift in Sources */,
 				67CD16D02BB3333C0079E732 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,7 +856,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		6703099F2BB77A0700AF49F2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -704,18 +864,31 @@
 				kind = branch;
 			};
 		};
+		6755187B2BBD786A0089D0CE /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathantannar4/InputBarAccessoryView?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		67CD17112BB4A4120079E732 /* Realm */ = {
+		670309A02BB77A0700AF49F2 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 6703099F2BB77A0700AF49F2 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		67CD17132BB4A4120079E732 /* RealmSwift */ = {
+		670309A22BB77A0700AF49F2 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 67CD17102BB4A4120079E732 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 6703099F2BB77A0700AF49F2 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		6755187C2BBD786A0089D0CE /* InputBarAccessoryView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6755187B2BBD786A0089D0CE /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */;
+			productName = InputBarAccessoryView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

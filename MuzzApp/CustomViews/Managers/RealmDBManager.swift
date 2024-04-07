@@ -31,7 +31,7 @@ class RealmDBManager {
             realm = try await Realm(configuration: configuration!, downloadBeforeOpen: .always)
             messages = realm.objects(ChatMessage.self).sorted(byKeyPath: "timestamp", ascending: true)
         } catch {
-            throw MZError.unableToCreateUser
+            throw MZError.invalidUsername
         }
     }
     

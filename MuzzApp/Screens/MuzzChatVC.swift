@@ -9,7 +9,7 @@ import UIKit
 import SwiftData
 import RealmSwift
 
-class MuzzChatVC: UIViewController {
+class MuzzChatVC: MZDataLoadingVC {
     let loginTitleLabel = MZTitleLabel(textAlignment: .left, fontSize: 20)
     let loginTextField = MZTextField(frame: .zero)
     let loginButton = MZButton(title: "Login", colour: .systemRed, systemImageName: nil)
@@ -32,7 +32,7 @@ class MuzzChatVC: UIViewController {
     
     func configureRegisterLoginView() {
         view.addSubview(loginTitleLabel)
-        loginTitleLabel.text = "Username: "
+        loginTitleLabel.text = "Email: "
         view.addSubview(loginTextField)
         view.addSubview(loginButton)
         
@@ -52,25 +52,26 @@ class MuzzChatVC: UIViewController {
             loginButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -5),
             loginButton.heightAnchor.constraint(equalToConstant: 50)
         ])
-        
     }
     
     
     @objc func loginUser() {
         Task {
             do {
+                self.showLoadingView()
                 try await RealmDBManager.shared.loginUser(username: loginTextField.text ?? "")
                 self.user = RealmDBManager.shared.realmApp.currentUser?.id
                 let chatView = ChatListVC(user: self.user)
-                chatView.modalTransitionStyle = .crossDissolve
-                chatView.modalPresentationStyle = .fullScreen
+                dismissLoadingView()
                 navigationController?.pushViewController(chatView, animated: true)
             } catch {
-                print("Failed to login")
+                if let mzError = error as? MZError {
+                    presentMZAlert(title: "Unable to log in", message: mzError.rawValue, buttonTitle: "Ok")
+                } else {
+                    presentDefaultError()
+                }
             }
         }
     }
-    
-    
 }
 

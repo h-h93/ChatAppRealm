@@ -49,14 +49,19 @@ final class MZInputAccessoryView: InputBarAccessoryView {
         isTranslucent = true
     }
     
-    // my own animation function
+    /* my own animation function i create a message bubble view and attach a label
+     i position it on the bottom left of the screen close the input text view and animate it
+     going in to the collection view cell
+     */
     func animateMessageLabel(completedAnimation: @escaping (Bool) -> (Void)) {
         guard let messageText = inputTextView.text else { return }
+        // specify the message bubble view coordinate and assign it
         let frameOriginY = self.frame.origin.y - 40
         let frameOriginX = self.frame.origin.x + 20
         let messageBubbleView = MZMessageBubbleView(colour: UIColor.systemRed, translatesAutoresizingMaskIntoConstraints: false)
         messageBubbleView.frame = CGRect(x: frameOriginX, y: frameOriginY, width: 200, height: 50)
         
+        // specify the label view point of origin (within the message bubble view) and assign it
         let bubbleOriginY = messageBubbleView.frame.origin.x
         let bubbleOriginX = messageBubbleView.frame.origin.y
         let label = MZMessageAnimationLabel(text: messageText)
@@ -65,10 +70,11 @@ final class MZInputAccessoryView: InputBarAccessoryView {
         messageBubbleView.addSubview(label)
         addSubview(messageBubbleView)
         
-        // Animate the movement of the label from the bottom left corner to end of screen
+        // Animate the movement of the view+label from the bottom left corner to end of screen
         UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: .curveLinear, animations: {
             messageBubbleView.transform = CGAffineTransform(translationX: UIScreen.main.bounds.width - messageBubbleView.frame.width - 20, y: messageBubbleView.bounds.origin.y)
         }, completion: { _ in
+            // Animate the movement of the view+label towards the top of the ipnut text bar and into the cell
             UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveLinear, animations: {
                 messageBubbleView.transform = CGAffineTransform(translationX: self.safeAreaLayoutGuide.layoutFrame.width - messageBubbleView.frame.width, y: -30)
             }) { _ in

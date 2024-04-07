@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MZMessageContainerView: UIView {
+class MZAlertContainerView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

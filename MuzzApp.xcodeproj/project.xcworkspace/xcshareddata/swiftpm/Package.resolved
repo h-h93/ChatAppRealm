@@ -1,6 +1,15 @@
 {
-  "originHash" : "b98879f944e498c1559645ae17337220f8652f5a7e518b251d8f7bc58ae27058",
+  "originHash" : "08ea8627ff12a42c474b3481e9239955655c1404b00623a966a1d6f5df94c2df",
   "pins" : [
+    {
+      "identity" : "inputbaraccessoryview?tab=readme-ov-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nathantannar4/InputBarAccessoryView?tab=readme-ov-file",
+      "state" : {
+        "revision" : "17ced92a5dccb36512b408b6276353631d7cbe57",
+        "version" : "6.3.0"
+      }
+    },
     {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
