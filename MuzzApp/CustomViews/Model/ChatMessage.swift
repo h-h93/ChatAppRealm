@@ -8,6 +8,10 @@
 import Foundation
 import RealmSwift
 
+struct MessageSectionHeader: Hashable {
+    let date: Date
+}
+
 class ChatMessage: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var author: String
@@ -20,5 +24,6 @@ class ChatMessage: Object, ObjectKeyIdentifiable {
         self.author = author
         self.recipient = recipient
         self.text = text
+        
     }
 }

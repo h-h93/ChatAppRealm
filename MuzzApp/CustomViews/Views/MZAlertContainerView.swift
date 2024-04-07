@@ -11,7 +11,8 @@ class MZMessageContainerView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configure()
+        configureView()
+        
     }
     
     
@@ -20,8 +21,11 @@ class MZMessageContainerView: UIView {
     }
     
     
-    private func configure() {
-        backgroundColor = .systemRed
-        translatesAutoresizingMaskIntoConstraints = false
+    private func configureView() {
+        self.layer.cornerRadius = 16
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor.white.cgColor
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.backgroundColor = .systemBackground
     }
 }
