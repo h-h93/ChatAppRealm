@@ -58,9 +58,9 @@ class MuzzChatVC: MZDataLoadingVC {
     
     
     @objc func loginUser() {
-        Task {
+        Task(priority: .background) {
+            self.showLoadingView()
             do {
-                self.showLoadingView()
                 try await RealmDBManager.shared.loginUser(username: loginTextField.text ?? "")
                 self.user = RealmDBManager.shared.realmApp.currentUser?.id
                 let chatView = ChatListVC(user: self.user)
@@ -73,6 +73,7 @@ class MuzzChatVC: MZDataLoadingVC {
                     presentDefaultError()
                 }
             }
+            self.showLoadingView()
         }
     }
 }
