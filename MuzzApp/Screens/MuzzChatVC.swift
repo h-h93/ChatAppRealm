@@ -67,13 +67,13 @@ class MuzzChatVC: MZDataLoadingVC {
                 dismissLoadingView()
                 navigationController?.pushViewController(chatView, animated: true)
             } catch {
+                dismissLoadingView()
                 if let mzError = error as? MZError {
                     presentMZAlert(title: "Unable to log in", message: mzError.rawValue, buttonTitle: "Ok")
                 } else {
                     presentDefaultError()
                 }
             }
-            dismissLoadingView()
         }
     }
 }
